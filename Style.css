@@ -122,7 +122,12 @@ footer h2 {
         display: none;
     }
     .loki {
-    width: 90vw;
-    transform: translate(-50%, -50%);
+    width: 40vw;
+    transform: translate( -155%, -100%);
+    }
+
+    .titulo {
+        width: 60vw;
+        transform: translate( 7%, -7%);
     }
 }
