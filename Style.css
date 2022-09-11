@@ -26,14 +26,31 @@ body {
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: var(--backgroud-color);
+    gap: 50px;
+    
+}
+
+.lista-cabecalho {
+    display: flex;
+    font-family: 'Ubuntu Mono', monospace;
+    font-style: normal;
+    font-size: 1.3vw;
+    font-weight: 700;
+    color: red;
+    gap: 20%;
+    text-decoration: none;
 }
 
 .logo-multi {
-    width: 248px;
-    height: 60px;
+    width: 14vw;
+    height: 4vw;
     padding: 10px;
+}
+
+.logo-pequena {
+    display: none;
 }
 
 main {
@@ -118,16 +135,53 @@ footer h2 {
 }
 
 @media (max-width: 640px) {
+    .logo-multi {
+       display: none;
+    }
+
+    .logo-pequena {
+        display: block;
+        position: relative;
+        height: 10vw;
+        width: 20vw;
+        left: -85%;
+
+    }
+
+    .lista-cabecalho {
+        display: none;
+    }
+
     .descricao-dois {
         display: none;
     }
+
     .loki {
-    width: 40vw;
-    transform: translate( -155%, -100%);
+        border-radius: 0px;
+        width: 80vw;
+        height: 120vw;
+        transform: translate( -100%, -90%);
+        z-index: -1;
     }
 
     .titulo {
-        width: 60vw;
-        transform: translate( 7%, -7%);
+        width: 70vw;
+        height: 40vw;
+        transform: translate( 4%, 300%);
+    }
+
+    .descricao {
+        font-size: 1.2rem;
+        width: 80vw;
+        height: 70vw;
+        transform: translate( -7%, 168%);
+    }
+
+    .itens {
+        display: none;
+    }
+
+    footer {
+        display: none;
     }
 }
